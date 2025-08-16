@@ -29,7 +29,7 @@ int main(){
         
         // Input for 2nd matrix
         int b[p][q];
-        cout << "Enter elements of 1st matrix: ";
+        cout << "Enter elements of 2nd matrix: ";
         for(int i = 0; i < p; i++)
             for(int j = 0; j < q; j++)
                 cin >> b[i][j];
@@ -37,6 +37,24 @@ int main(){
 
         // resultant matrix
         int res[m][q];
+        
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < q; j++){
+                // res[i][j] = a[i][0]*b[0][j] + a[i][1]*b[1][j] + a[i][2]*b[2][j]
+                res[i][j] = 0;
+
+                for(int k = 0; k < p; k++)
+                    res[i][j] += a[i][k] * b[k][j];
+            }
+        }
+
+        // print 
+        for (int i = 0; i < m; i++){
+            for(int j = 0; j < q; j++){
+                cout << res[i][j] << " ";
+            }
+            cout << endl;
+        }
         
     }
 

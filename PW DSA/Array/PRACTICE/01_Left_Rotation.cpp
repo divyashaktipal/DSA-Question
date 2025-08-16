@@ -39,7 +39,10 @@ int main(){
     arr.push_back(5);
 
     int n = arr.size();
+    rotateArray(arr, n);
 
-    cout << rotateArray(arr, n);
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
 
 }
