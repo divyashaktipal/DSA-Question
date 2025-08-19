@@ -49,6 +49,7 @@ int main(){
         }
 
         // print 
+        cout << "Resultant Matrix is: "<<endl; 
         for (int i = 0; i < m; i++){
             for(int j = 0; j < q; j++){
                 cout << res[i][j] << " ";
