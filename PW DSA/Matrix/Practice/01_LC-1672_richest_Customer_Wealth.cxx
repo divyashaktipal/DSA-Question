@@ -15,6 +15,10 @@
 // 1.) Calculated Each row sum and stored them into a new vector 'rowSums'.
 // 2.) Find the maximum element from the 'rowSums' vector using '*max_element()' and return it.
 
+// Time Complexity: O(m*n) where m is the number of rows and n is the number of columns.
+// Space Complexity: O(m) where m is the number of rows.
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
